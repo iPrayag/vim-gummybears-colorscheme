@@ -106,7 +106,7 @@ hi  ErrorMsg     guifg=#e8e8d3 guibg=#902020  gui=BOLD      ctermfg=15    ctermb
 hi  WarningMsg   guifg=#ffffff guibg=#ff8cc2  gui=BOLD      ctermfg=15    ctermbg=203  cterm=BOLD
 
 " Message displayed in lower left, such as --INSERT--
-hi ModeMsg          guifg=#000000  guibg=#C6C5FE gui=BOLD     ctermfg=0 ctermbg=189 cterm=BOLD
+hi ModeMsg       guifg=#000000  guibg=#C6C5FE gui=BOLD     ctermfg=0 ctermbg=189 cterm=BOLD
 
 if version >= 700 " Vim 7.x specific colors
   hi CursorLine   guifg=NONE    guibg=#000000 gui=NONE      ctermfg=NONE ctermbg=16  cterm=NONE
@@ -226,16 +226,19 @@ hi  javaDocSeeTag guifg=#CCCCCC guibg=NONE gui=NONE ctermfg=252 ctermbg=NONE cte
 
 
 " Special for HTML
-hi htmlH1 guifg=#22aba4  guibg=NONE gui=UNDERLINE ctermfg=38  ctermbg=NONE cterm=BOLD
-hi htmlLink guifg=#c777ff guibg=NONE gui=NONE ctermfg=171 ctermbg=NONE cterm=BOLD
-hi htmlString guifg=#799668 guibg=NONE gui=NONE ctermfg=100 ctermbg=NONE cterm=NONE
-hi htmlTagName guifg=#b097b0 guibg=NONE gui=NONE ctermfg=175 ctermbg=NONE cterm=NONE
+hi htmlH1        guifg=#22aba4 guibg=NONE gui=UNDERLINE ctermfg=38  ctermbg=NONE cterm=BOLD
+hi htmlLink      guifg=#c777ff guibg=NONE gui=NONE      ctermfg=171 ctermbg=NONE cterm=BOLD
+hi htmlString    guifg=#799668 guibg=NONE gui=NONE      ctermfg=100 ctermbg=NONE cterm=NONE
+hi htmlTagName   guifg=#b097b0 guibg=NONE gui=NONE      ctermfg=175 ctermbg=NONE cterm=NONE
 hi link htmlTag         Keyword
 hi link htmlEndTag      Identifier
 hi link htmlH2 htmlH1
 hi link htmlH3 htmlH1
 hi link htmlH4 htmlH1
 
+" Special for Javascript
+hi link javaScriptBrowserObjects htmlString
+hi link javaScriptDOMObjects     htmlString
 
 " Special for XML
 hi link xmlTag          Keyword
@@ -254,11 +257,11 @@ hi cssIdentifier    guifg=#3fc493 gui=italic ctermfg=115 cterm=NONE
 
 " Special for Markdown
 hi link markdownUrl    htmlLink
-hi markdownCode guifg=#a7bee4   gui=BOLD ctermfg=151 cterm=BOLD
+hi markdownCode      guifg=#a7bee4   gui=BOLD ctermfg=151 cterm=BOLD
 hi markdownCodeBlock guifg=#c5b1e4 ctermfg=182
 
 " Special for Javascript
-hi JavaScriptStrings     guifg=#26b3ac guibg=NONE gui=ITALIC ctermfg=45  ctermbg=NONE  cterm=NONE
+hi JavaScriptStrings          guifg=#26b3ac guibg=NONE gui=ITALIC ctermfg=45  ctermbg=NONE  cterm=NONE
 hi link javaScriptNumber      Number
 
 " Special for Python
