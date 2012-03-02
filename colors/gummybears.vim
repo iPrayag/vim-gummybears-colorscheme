@@ -129,13 +129,13 @@ hi Number      guifg=#af5f00 guibg=NONE    gui=NONE   ctermfg=130 ctermbg=NONE c
 
 hi Keyword     guifg=#ffaf00 guibg=NONE    gui=ITALIC ctermfg=214 ctermbg=NONE cterm=BOLD
 hi PreProc     guifg=#00afd7 guibg=NONE    gui=BOLD   ctermfg=38  ctermbg=NONE cterm=BOLD
-hi Conditional guifg=#ffd700 guibg=NONE    gui=NONE   ctermfg=220 ctermbg=NONE cterm=NONE
+hi Conditional guifg=#ffd75f guibg=NONE    gui=NONE   ctermfg=222 ctermbg=NONE cterm=NONE
 
 hi Todo        guifg=#87005f guibg=#ffff5f gui=BOLD,UNDERLINE   ctermfg=89  ctermbg=227  cterm=BOLD
 hi Constant    guifg=#d75f5f guibg=NONE    gui=BOLD,ITALIC ctermfg=167 ctermbg=NONE cterm=BOLD
 
 hi Identifier  guifg=#8787d7 guibg=NONE    gui=NONE   ctermfg=104 ctermbg=NONE cterm=NONE
-hi Function    guifg=#d7af87 guibg=NONE    gui=BOLD   ctermfg=180 ctermbg=NONE cterm=BOLD
+hi Function    guifg=#d78787 guibg=NONE    gui=BOLD   ctermfg=174 ctermbg=NONE cterm=BOLD
 hi Type        guifg=#d78700 guibg=NONE    gui=BOLD,ITALIC   ctermfg=172 ctermbg=NONE cterm=BOLD
 hi Statement   guifg=#87af5f guibg=NONE    gui=ITALIC   ctermfg=107 ctermbg=NONE cterm=NONE
 
@@ -147,7 +147,7 @@ hi Character   guifg=#ff875f guibg=NONE    gui=NONE   ctermfg=209 ctermbg=NONE c
 hi Boolean     guifg=#5fafd7 guibg=NONE    gui=NONE   ctermfg=74  ctermbg=NONE cterm=NONE
 hi Repeat      guifg=#ffaf87 guibg=NONE    gui=NONE   ctermfg=216 ctermbg=NONE cterm=NONE
 hi Exception   guifg=#d75f87 guibg=NONE    gui=NONE   ctermfg=168 ctermbg=NONE cterm=NONE
-hi Include     guifg=#00d7d7 guibg=NONE    gui=NONE   ctermfg=44  ctermbg=NONE cterm=NONE
+hi Include     guifg=#00afaf guibg=NONE    gui=NONE   ctermfg=37  ctermbg=NONE cterm=NONE
 hi StorageClass guifg=#c59f6f guibg=NONE   gui=NONE   ctermfg=173 ctermbg=NONE cterm=NONE
 hi Tag         guifg=#5fdf87 guibg=NONE    gui=NONE   ctermfg=78  ctermbg=NONE cterm=NONE
 hi Ignore      guifg=#bcbcbc guibg=NONE    gui=NONE   ctermfg=250 ctermbg=NONE cterm=NONE
@@ -264,8 +264,8 @@ hi link CTagsMember   htmlString
 	hi JavaScriptStrings          guifg=#26b3ac guibg=NONE gui=ITALIC ctermfg=45  ctermbg=NONE  cterm=NONE
 	hi link javaScriptNumber      Number
 	hi link javaScript  Normal
-	hi link javaScriptBrowserObjects htmlString
-	hi link javaScriptDOMObjects     htmlString
+	hi link javaScriptBrowserObjects PreProc
+	hi link javaScriptDOMObjects     PreProc
 	"}}}
 	" Special for Python"{{{
 	"hi  link pythonEscape         Keyword
