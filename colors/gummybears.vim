@@ -1,16 +1,16 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"       ____                                ____
+"     / ___|_   _ _ __ ___  _ __ ___  _   _| __ )  ___  __ _ _ __ ___
+"    | |  _| | | | '_ ` _ \| '_ ` _ \| | | |  _ \ / _ \/ _` | '__/ __|
+"    | |_| | |_| | | | | | | | | | | | |_| | |_) |  __/ (_| | |  \__ \
+"     \____|\__,_|_| |_| |_|_| |_| |_|\__, |____/ \___|\__,_|_|  |___/
+"                                     |___/
 "
-  " ____                                 ____
- " / ___|_   _ _ __ ___  _ __ ___  _   _| __ )  ___  __ _ _ __ ___
-" | |  _| | | | '_ ` _ \| '_ ` _ \| | | |  _ \ / _ \/ _` | '__/ __|
-" | |_| | |_| | | | | | | | | | | | |_| | |_) |  __/ (_| | |  \__ \
- " \____|\__,_|_| |_| |_|_| |_| |_|\__, |____/ \___|\__,_|_|  |___/
-  "                                |___/
-" By: Jose Elera Campana - https://github.com/jelera
-" Based: on jellybeans.vim and ir_black
+"     By: Jose Elera Campana - https://github.com/jelera
 "
-" Support for 256 Color Terminal and Full Color graphical Vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+"     Support for 256 Color Terminal and Full Color graphical Vim
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Basic Info"{{{
 " ********************************************************************************
 " Standard colors
@@ -64,6 +64,7 @@
 
 " ********************************************************************************
 "}}}
+" Gummybears info"{{{
 if version > 580
 	hi clear
 	if exists("syntax_on")
@@ -76,7 +77,7 @@ let g:colors_name = "gummybears"
 if !has("gui_running") && &t_Co != 88 && &t_Co != 256
 	finish
 endif
-
+"}}}
 " General colors"{{{
 hi  Normal       guifg=#dadada guibg=#121212 gui=NONE      ctermfg=253   ctermbg=233  cterm=NONE
 hi  NonText      guifg=#ff00ff guibg=#000000 gui=NONE      ctermfg=13    ctermbg=0    cterm=NONE
@@ -176,17 +177,17 @@ hi DiffDelete  guifg=#d7afff guibg=#870000    gui=NONE   ctermfg=183 ctermbg=88 
 hi DiffText    guifg=#080808 guibg=#ff5fff    gui=BOLD   ctermfg=232 ctermbg=207 cterm=BOLD
 "}}}
 " Spelling"{{{
-hi SpellBad     guisp=#d70000                   ctermfg=bg     ctermbg=160       gui=undercurl cterm=REVERSE
-hi SpellCap     guisp=#00afd7                   ctermfg=bg     ctermbg=38        gui=undercurl cterm=REVERSE
-hi SpellRare    guisp=#5faf00                   ctermfg=bg     ctermbg=70        gui=undercurl cterm=REVERSE
-hi SpellLocal   guisp=#d7af00                   ctermfg=bg     ctermbg=178       gui=undercurl cterm=REVERSE
+hi SpellBad     guisp=#d70000       ctermfg=bg     ctermbg=160       gui=undercurl cterm=REVERSE
+hi SpellCap     guisp=#00afd7       ctermfg=bg     ctermbg=38        gui=undercurl cterm=REVERSE
+hi SpellRare    guisp=#5faf00       ctermfg=bg     ctermbg=70        gui=undercurl cterm=REVERSE
+hi SpellLocal   guisp=#d7af00       ctermfg=bg     ctermbg=178       gui=undercurl cterm=REVERSE
 "}}}
 " Ctags"{{{
-hi link CTagsClass      htmlString
+hi link CTagsClass            htmlString
 hi link CTagsGlobalConstant   htmlString
 hi link CTagsGlobalVariable   htmlString
-hi link CTagsImport   htmlString
-hi link CTagsMember   htmlString
+hi link CTagsImport           htmlString
+hi link CTagsMember           htmlString
 "}}}
 " Filetype specifics"{{{
 	" Special for Ruby"{{{
