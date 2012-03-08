@@ -79,7 +79,7 @@ if !has("gui_running") && &t_Co != 88 && &t_Co != 256
 endif
 "}}}
 " General colors"{{{
-hi  Normal       guifg=#dadada guibg=#121212 gui=NONE      ctermfg=253   ctermbg=233  cterm=NONE
+hi  Normal       guifg=#c6c6c6 guibg=#121212 gui=NONE      ctermfg=251   ctermbg=233  cterm=NONE
 hi  NonText      guifg=#ff00ff guibg=#000000 gui=NONE      ctermfg=13    ctermbg=0    cterm=NONE
 
 hi  Cursor       guifg=#000000 guibg=#ffff00 gui=NONE      ctermfg=0     ctermbg=11   cterm=reverse
@@ -220,9 +220,9 @@ hi link CTagsMember           htmlString
 	"}}}
 	" Special for HTML"{{{
 	hi htmlH1        guifg=#00afd7 guibg=NONE gui=UNDERLINE ctermfg=38  ctermbg=NONE cterm=BOLD
-	hi htmlLink      guifg=#d787d7 guibg=NONE gui=NONE      ctermfg=138 ctermbg=NONE cterm=NONE
+	hi htmlLink      guifg=#d7d75f guibg=NONE gui=NONE      ctermfg=185 ctermbg=NONE cterm=NONE
 	hi htmlString    guifg=#87875f guibg=NONE gui=NONE      ctermfg=101 ctermbg=NONE cterm=NONE
-	hi htmlTagName   guifg=#b097b0 guibg=NONE gui=NONE      ctermfg=175 ctermbg=NONE cterm=NONE
+	hi htmlTagName   guifg=#d7afd7 guibg=NONE gui=NONE      ctermfg=182 ctermbg=NONE cterm=NONE
 	hi link htmlTag         Keyword
 	hi link htmlEndTag      Identifier
 	hi link htmlH2 htmlH1
