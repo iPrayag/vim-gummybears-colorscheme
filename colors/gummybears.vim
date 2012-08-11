@@ -79,7 +79,7 @@ if !has("gui_running") && &t_Co != 88 && &t_Co != 256
 endif
 "}}}
 " General colors"{{{
-hi  Normal       guifg=#c6c6c6 guibg=#121212 gui=NONE      ctermfg=251   ctermbg=233  cterm=NONE
+hi  Normal       guifg=#c6c6c6 guibg=#262626 gui=NONE      ctermfg=251   ctermbg=235  cterm=NONE
 hi  NonText      guifg=#ff00ff guibg=#000000 gui=NONE      ctermfg=13    ctermbg=0    cterm=NONE
 
 hi  Cursor       guifg=#000000 guibg=#ffff00 gui=NONE      ctermfg=0     ctermbg=11   cterm=reverse
